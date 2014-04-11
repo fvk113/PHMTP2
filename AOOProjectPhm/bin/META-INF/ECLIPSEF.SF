@@ -1,0 +1,80 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: /sqK/64XHtCMNxWXOMlxR1TwCRY=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: mgq1GIg9c8NT5MuEeWfy3Co+LX8=
+
+Name: org/hamcrest/internal/ArrayIterator.class
+SHA1-Digest: OZ2hnJpqOSPHdp1JDwxdRD6YLfU=
+
+Name: org/hamcrest/core/IsNot.class
+SHA1-Digest: S4V2ezJJuCA1wKrdQAMPZjc5d+8=
+
+Name: org/hamcrest/internal/SelfDescribingValueIterator.class
+SHA1-Digest: a6JNGgFmheT9wb766p53wNquzkQ=
+
+Name: org/hamcrest/Description.class
+SHA1-Digest: bHNp0/3Qh4z6KQ2GC6nwzgF1Zqk=
+
+Name: org/hamcrest/core/IsAnything.class
+SHA1-Digest: Xs/tqi73Y/5tsGrCulMGzQCfK1Y=
+
+Name: org/hamcrest/core/DescribedAs.class
+SHA1-Digest: CBr66hTQyBI4kPhyWAsIkSmsvrA=
+
+Name: org/hamcrest/core/IsNull.class
+SHA1-Digest: ctclY/emMnY4lhGBD+1otWeAvqU=
+
+Name: plugin.properties
+SHA1-Digest: P3MOdZ/KujUr2nw4mQZPsoWYqGA=
+
+Name: org/hamcrest/core/IsInstanceOf.class
+SHA1-Digest: ls/+smp01a0xEMzSXvKzUAlqyU4=
+
+Name: org/hamcrest/core/AllOf.class
+SHA1-Digest: 1YprNmjnhRMb38hX21323F+s/M0=
+
+Name: org/hamcrest/Factory.class
+SHA1-Digest: 1xdgDy4teFG90A9OaezTOraJ3Eo=
+
+Name: about_files/LICENSE.txt
+SHA1-Digest: nytNz/Xqf8oTTtCTTZtrR2VYAh0=
+
+Name: org/hamcrest/core/AnyOf.class
+SHA1-Digest: GNy03dJswb9bRxV5Y1y6QiAWDg4=
+
+Name: org/hamcrest/SelfDescribing.class
+SHA1-Digest: 8Q227NG6kW+QI8j53+XDVQ0z7RA=
+
+Name: org/hamcrest/core/Is.class
+SHA1-Digest: dMMORmnldsitXn+vWHDrzIcYLks=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/hamcrest/core/IsEqual.class
+SHA1-Digest: dV+UfXBlbo8WNmXVHHfM7qgAUa0=
+
+Name: org/hamcrest/core/IsSame.class
+SHA1-Digest: pYiXihfWuZc/rYvBHnrW6NptfMQ=
+
+Name: org/hamcrest/BaseMatcher.class
+SHA1-Digest: Yeww7l3pxz0BSpK2G4JB7Bi/WpM=
+
+Name: org/hamcrest/CoreMatchers.class
+SHA1-Digest: xFgBrNWfgx1Nw8kBykMigl+wEaU=
+
+Name: about.html
+SHA1-Digest: ekOfhzXF5+HY6Z3emdDOvir0Npo=
+
+Name: org/hamcrest/StringDescription.class
+SHA1-Digest: IRqQKbVUOoVk5MLv26AEgW6ECHY=
+
+Name: org/hamcrest/BaseDescription.class
+SHA1-Digest: 6FxmKbxsN8F2BhfyG+1wJAm3Qpg=
+
+Name: org/hamcrest/internal/SelfDescribingValue.class
+SHA1-Digest: C3BPGMJQkC5AeIThJNMq0hqPCrM=
+
+Name: org/hamcrest/Matcher.class
+SHA1-Digest: MmdLtgih2OvDcAG8FQvadfZD654=
+

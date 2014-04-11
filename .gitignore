@@ -8,3 +8,4 @@ Servers/
 target/
 AOOProjectPhm/.classpath
 AOOProjectPhm/.classpath
+*.classpath

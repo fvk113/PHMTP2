@@ -1,21 +1,46 @@
 package aspects;
-
-import annotations.Monitored;
+ 
+import java.util.HashMap;
+import clases.*;
 
 public aspect ContadorLlamadasAspect {
-	public int counter = 0;
+	public HashMap<Object, Integer> contadorPersonasSet = new HashMap<Object, Integer>();
+	public HashMap<Object, Integer> contadorPersonasGet = new HashMap<Object, Integer>();
+	public HashMap<String, HashMap<Object, Integer>> contadores = 
+	new HashMap<String, HashMap<Object, Integer>>(){  
+		private static final long serialVersionUID = 1L;
 
+		{  put("get",contadorPersonasGet);  
+	       put("set",contadorPersonasSet);  
+	     }  
+	     };  
+	pointcut monitoredSet(Object target, Object newValue) : set(* Persona..*) && args(newValue) && target(target) && @withincode(Monitored);
+	   
 
-	pointcut fieldRead(Object target, Object newValue) : 
-		set(* @Monitored AOOProjectPhm.clases..*) && args(newValue) && target(target);
-	
-	pointcut fieldWrite(Object target, Object newValue) : 
-		set(* AOOProjectPhm.clases..*) && args(newValue) && target(target);
+	pointcut monitoredCall(Object target, Object newValue) : 
+		call(* clases..getNombre()) && args(newValue) && target(target);
 
-	pointcut monitored(Object target, Object newValue) : set(* *..*) && args(newValue) && target(@Monitored target);
-	
-	void around(Object target, Object newValue) : monitored(target, newValue){
+	void around(Object target, Object newValue) : monitoredSet(target, newValue){
 		proceed(target,newValue);
-		this.counter += 1;
+		if(contadorPersonasSet.get(target)!=null){
+			contadorPersonasSet.put(target,contadorPersonasSet.get(target)+1);
+		}
+		else{
+			contadorPersonasSet.put(target,1);
+		}
+		}
+	
+	
+	void around(Object target, Object newValue) : monitoredCall(target, newValue){
+		proceed(target,newValue);
+		if(contadorPersonasGet.get(target)!=null){
+			contadorPersonasGet.put(target,contadorPersonasGet.get(target)+1);
+		}
+		else{
+			contadorPersonasGet.put(target,1);
+		}	}
+	
+	public int CantidaLLamados(Object target, String string){
+		return contadores.get(string).get(target);
 	}
 }

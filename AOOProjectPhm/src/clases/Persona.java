@@ -1,6 +1,5 @@
 package clases;
 
-import annotations.Monitored;
 
 public class Persona {
 	 	private String nombre ;
@@ -9,7 +8,7 @@ public class Persona {
 	    public String getNombre() {
 	        return this.nombre ;
 	    }
-	    
+
 	    @Monitored
 	    public void setNombre(String nombre) {
 	        this.nombre = nombre;
